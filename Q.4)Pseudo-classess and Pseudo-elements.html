@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Q.4) Pseudo-classess and Pseudo-elements</title>
+</head>
+<style>
+        ul {
+            list-style: none; /* Default  Bullets hata diye */
+            padding: 0;
+            width: 200px;           
+        }
+    
+         li{
+            padding: 10px;
+            background-color: lightgray;
+            margin: 5px 0;
+            position: relative;
+         }
+
+
+
+         /*Hover Effect*/
+         li:hover {
+            background-color: #ccc;
+         }
+
+         
+        /*  Customer bullet using ::before */
+        li::before {
+            content: ".";
+            color: red;
+            font-weight: bold;
+        } 
+
+
+</style>
+</head>
+<body>
+
+<ul>
+      <li>Home</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      
+ 
+</ul>
+</body>
+</html>
+
+
+
+
+
+    
+</body>
+</html>
